@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding: 1em;
+    text-align: center;
+}
+.logo{
+    margin: 8em 10em 10em 10em;
+}
+
+.img2{
+    max-width: 20%;  
+    margin:20em 10em 23em 20em;
+    float:left;
+}
+
+.text {
+    color:gray;
+    padding-top: 20.5em;
+    padding-left: 20px;
+    padding-bottom: 25em;
+    padding-right: 10em;
+  }
+
+h1{
+    font-family: "Candara light";
+    font-size: 50px;
+}
+
+p{
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 20px;
+}
+
+@keyframes color-rotate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+.logo:hover {
+    animation: color-rotate 1s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+}
+
+body, html {
+    height: 100%;
+  }
+  .parallax {
+    /* The image used */
+    background-image: url('gtahome.jpg');
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
