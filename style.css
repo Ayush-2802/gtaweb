@@ -14,6 +14,8 @@
 .container{
     width: 100%;
     height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 header{
@@ -26,9 +28,14 @@ header{
     display:flex;
     align-items: center;
     justify-content: center;
+    scroll-snap-align: start;
+}
+.slide1{
+    background-color: black;
 }
 
 .slide2{
+    background-color: black;
     color:gray;
     font-family: "Candara ligth";
 }
